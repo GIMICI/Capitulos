@@ -1,0 +1,155 @@
+%---------------------------------------------------------------------
+%
+%                          Cap\'itulo 1
+%
+%---------------------------------------------------------------------
+
+\chapter{Introducci\'on}
+
+%\begin{FraseCelebre}
+%\begin{Frase}
+%...
+%\end{Frase}
+%\begin{Fuente}
+%...
+%\end{Fuente}
+%\end{FraseCelebre}
+
+%\begin{resumen}
+%...
+%\end{resumen}
+
+%-------------------------------------------------------------------
+%\section{Introducci\'on}
+%-------------------------------------------------------------------
+\label{cap1:sec:introduccion}
+
+\section{Divisas electr\'onicas, Bitcoin}
+
+\subsection{Historia}
+
+El concepto de dinero electr\'onico aparece en respuesta a situaciones que se presentan en el \'ambito de internet. Visto en perspectiva, y dado el r\'apido crecimiento que han tenido los intercambios virtuales en las \'ultimas decadas, parece inevitable que tarde o temprano se popularizara este concepto.
+
+Inicialmente, es en el mundo de los videojuegos donde se dan las primeras referencias a esto. Podemos tomar como ejemplo el caso de la red social-videojuego SecondLife, en donde se pod\'ia hacer uso del ``Linden Dollar'' de manera similar a una moneda real para adquirir diversidad de objetos, entre otros. INSERTAR REF. A DOCUMENTO OFICIAL
+
+A partir de entonces, empezaron a surgir juegos multijugador online donde los jugadores pueden acceder a objetos, misiones o mejoras mediante la compra de cr\'editos.
+
+Con el paso del tiempo, el uso de internet se ha ido masificando, y asimismo la utilizaci\'on de medios virtuales de pago tambi\'en se ha
+generalizado. El objetivo es entonces facilitar este tipo de transacciones, adem\'as de mejorar la seguridad relacionada a los intercambios en este \'ambito. Comienzan entonces a ofrecerse servicios profesionales como PayPal, que sirven como monederos virtuales, \'utiles a la hora de realizar o recibir pagos relativos a transacciones realizadas por internet.
+
+Se hace patente entonces un nuevo objetivo: el anonimato. Surgen en respuesta las divisas electr\'onicas, con la diferencia respecto a las ``tangibles'' que no existe ninguna entidad central que las controle.
+
+Una de estas divisas, la que quiz\'as mas popularidad ha ganado, es el BitCoin. Para poder analizar con cierto detalle el funcionamiento de las divisas electr\'onicas, tomamos a partir de ahora como caso de estudio el BitCoin.
+
+\subsection{Origen del BitCoin}
+
+Bitcoin fue concebido en 2008 por una persona (o grupo de personas) bajo el seud\'onimo ``Satoshi Nakamoto''. La creaci\'on de la primera aplicaci\'on para operar con Bitcoins tambi\'en se le(s) atribuye. Respecto a esto, existen dudas sobre su nacionalidad y hay m\'ultiples especulaciones sobre su identidad real. INSERTAR REFERENCIA A wiki
+
+Bajo este seud\'onimo se publica tambi\'en un libro que propone un sistema de transacciones electr\'onicas que no depende de la confianza, sino que permite realizar transferencias de forma directa sin la necesidad de un intermediario.INSERTAR REFERENCIA A https://www.bitcoin.org/bitcoin.pdf Al contrario de la mayor\'ia de las monedas, el Bitcoin no est\'a respaldado por ning\'un gobierno ni depende de ning\'un emisor central, sino que utiliza un sistema de prueba de trabajo para impedir el doble gasto y alcanzar el consenso entre todos los nodos que integran la red.
+
+Desde que se puso en funcionamiento en 2009 el sistema ha ido ganando popularidad gracias a las caracter\'isticas de anonimato con las que permite realizar transacciones comerciales y al inter\'es especulativo que ha despertado la evoluci\'on de su cotizaci\'on al cambio con monedas reales.
+
+\subsection{Seguridad}
+
+La seguridad de la mayor\'ia de las criptomonedas (y en particular de Bitcoin) se basa en utilizar t\'ecnicas de criptograf\'ia para la protecci\'on del saldo del usuario. La verificaci\'on de las solicitudes de transacci\'on se realiza usando criptograf\'ia asim\'etrica.
+
+La criptograf\'ia asim\'etrica (en ingl\'es asymmetric key cryptography), tambi\'en llamada criptograf\'ia de clave p\'ublica o criptograf\'ia de dos claves1, es el m\'etodo criptogr\'afico que usa un par de claves para el env\'io de mensajes. Las dos claves pertenecen a la misma persona que ha enviado el mensaje. Una clave es p\'ublica y se puede entregar a cualquier persona, la otra clave es privada y el propietario debe guardarla de modo que nadie tenga acceso a ella.INSERTAR REF. A wiki
+
+El sistema tambi\'en asegura que las transacciones son correctas y que el poseedor de un saldo no puede gastarlo m\'as de una vez. Para ello se utilizan t\'ecnicas de sellado temporal con las que se registra el momento exacto en el que se solicita una transacci\'on de bitcoins. Los nodos de procesado tienen en cuenta estos valores para determinar si una transacci\'on es v\'alida o no.
+
+\subsection{Protocolo}
+
+\subsubsection{Direcciones}
+
+Todo participante de la red Bitcoin tiene una cartera electr\'onica que contiene un n\'umero arbitrario de claves criptogr\'aficas. A partir de la clave p\'ublica, se obtiene la direcci\'on Bitcoin, que funciona como la entidad remitente y receptora para todos los pagos. Su clave privada correspondiente autoriza el pago solo para ese usuario. Las direcciones no tienen ninguna informaci\'on sobre su propietario, son generalmente an\'onimas y no requieren de ning\'un contacto con los nodos de la red para su generaci\'on.
+
+Las direcciones son secuencias alfanum\'ericas aleatorias de 33 caracteres de largo, en formato legible para personas, como puede verse en este ejemplo: 1LtU9rMsQ41rCqsJAvMtw89TA5XT2dW7f9. Se utilizan codificaci\'on en Base58, que resulta de eliminar los siguientes seis caracteres del sistema Base64: 0 (cero), I (i may\'uscula), O (o may\'uscula), l (L min\'uscula), + (m\'as) y / (barra). De esta forma, se componen \'unicamente de caracteres alfanum\'ericos que se distinguen entre s\'i en cualquier tipo de letra. Las direcciones Bitcoin tambi\'en incluyen un checksum de 32 bits para detectar cambios accidentales en la secuencia de caracteres.
+
+\subsubsection{Transacciones}
+
+Cada BitCoin contienen la direcci\'on p\'ublica de su due\~no. Cuando un usuario A transfiere algo a un usuario B, A entrega la propiedad agregando la clave p\'ublica de B y despu\'es firmando con su clave privada. A entonces incluye esos bitcoins en una transacci\'on, y la difunde a los nodos de la red P2P a los que est\'a conectado. Estos nodos validan las firmas criptogr\'aficas y el valor de la transacci\'on antes de aceptarla y retransmitirla. Este procedimiento propaga la transacci\'on hasta alcanzar a todos los nodos de la red P2P.
+
+\subsubsection{Cadena de bloques}
+
+Todos los nodos que forman parte de la red Bitcoin mantienen una lista colectiva de todas las transacciones conocidas, a la que se denomina la cadena de bloques. Los nodos generadores, tambi\'en llamados mineros, crean los nuevos bloques, a\~nadiendo en cada uno de ellos el hash del \'ultimo bloque de la cadena m\'as larga de la que tienen conocimiento, as\'i como las nuevas transacciones publicadas en la red.
+
+Cuando un minero encuentra un nuevo bloque, lo transmite al resto de los nodos a los que est\'a conectado. En el caso de que resulte un bloque v\'alido, estos nodos lo agregan a la cadena y lo vuelven a retransmitir. Este proceso se repite indefinidamente hasta que el bloque ha alcanzado todos los nodos de la red. Eventualmente, la cadena de bloques contiene el historial de posesi\'on de todas las monedas desde la direcci\'on creadora a la direcci\'on del actual due\~no. Por lo tanto, si un usuario intenta reutilizar monedas que ya us\'o, la red rechazar\'a la transacci\'on.
+
+\subsubsection{Mining}
+
+La generaci\'on de bloques se conoce en ingl\'es como mining y puede traducirse al espa\~nol como 'extracci\'on' por analog\'ia con la miner\'ia del oro. Todos los nodos generadores de la red compiten para ser el primero en encontrar la soluci\'on al problema criptogr\'afico de su bloque candidato actual, mediante un sistema de pruebas de trabajo, resolviendo un problema que requiere varios intentos repetitivos, por fuerza bruta, no determinista, de manera que se evita que mineros con gran nivel de procesamiento dejen fuera a los menos capaces.
+
+De esta forma, la frecuencia de localizaci\'on de cada bloque sigue una distribuci\'on de Poisson y la probabilidad de que un minero lo encuentre depende del poder computacional con el que contribuye a la red en relaci\'on al poder computacional de todos los nodos combinados, lo que permite que el sistema funcione de manera descentralizada. Los nodos que reciben el nuevo bloque solucionado lo validan antes de aceptarlo, agreg\'andolo a la cadena. La validaci\'on de la soluci\'on proporcionada por el minero es trivial y se realiza inmediatamente.
+
+La red reajusta la dificultad cada 2016 bloques, es decir, aproximadamente cada 2 semanas, para que un bloque sea generado cada diez minutos. La cantidad de Bitcoins creada por bloque nunca es m\'as de 25 BTC, y los premios est\'an programados para disminuir con el paso del tiempo hasta llegar a cero, garantizando que no puedan existir m\'as de 21 millones de BTC.
+
+Los mineros no tienen la obligaci\'on de incluir transacciones en los bloques que generan, por lo que los remitentes de Bitcoins pueden pagar voluntariamente una tarifa para que tramiten sus transacciones m\'as r\'apidamente. Como el premio por bloque disminuye con el paso del tiempo, en el largo plazo todas las recompensas de los nodos generadores provendr\'an \'unicamente de las tarifas de transacci\'on.
+
+
+\section{Rendimiento computacional de la miner\'ia}
+
+Las estrategias para la extracci\'on de Bitcoins se han ido perfeccionando progresivamente. En los primeros meses de funcionamiento de la red era posible extraer en solitario con una CPU est\'andar y obtener un bloque y sus 50 BTC asociados con una frecuencia relativamente alta. Posteriormente, la aparici\'on de software de miner\'ia adaptado a tarjetas gr\'aficas, mucho m\'as eficiente, desplaz\'o completamente a las CPUs.
+
+La miner\'ia por GPUs se ha ido profesionalizando, con grandes instalaciones en pa\'ises con energ\'ia barata, configuraciones personalizadas con uso generalizado de overclocking y sistemas especiales de refrigeraci\'on. Con el aumento sostenido de la dificultad, los mineros comenzaron a organizarse en grupos independientes (en ingl\'es, pools) para extraer de manera colectiva, desplazando as\'i a los mineros en solitario que pod\'ian tardar meses o incluso a\~nos en encontrar un bloque de manera individual. El propietario del pool se lleva una comisi\'on por encontrar un bloque. Los pools tambi\'en compiten entre ellos para intentar atraer al mayor n\'umero de mineros.
+
+Desde el a\~no 2013 se han comenzado a comercializar FPGAs y ASICs para extraer Bitcoins de manera m\'as eficiente. Si con la miner\'ia con CPUs y tarjetas gr\'aficas, el coste de explotaci\'on proven\'ia fundamentalmente del gasto energ\'etico, la comercializaci\'on de equipos especializados de bajo consumo est\'a desplazando las inversiones de los mineros hacia hardware m\'as sofisticado, e indirectamente hacia la investigaci\'on necesaria para el desarrollo de estos productos.
+
+
+\section{Planteamiento del problema}
+
+Teniendo en cuenta la situaci\'on actual en el \'ambito de la ``miner\'ia'', hay que tener en cuenta que resulta sumamente ineficiente en la actualidad plantear la miner\'ia en solitario. Es m\'as recomendable unirse a un ``pool'', seg\'un se ha explicado previamente. Evidentemente, entre m\'as m\'aquinas se dispongan a tal efecto, mayor el beneficio asociado.
+
+El problema que subyace entonces, en el caso de disponer de m\'as de una m\'aquina con la que hacer miner\'ia, es el poderlas controlar y manejar de manera eficiente y c\'omoda.
+
+\section{Objetivos y alcance del proyecto}
+
+El objetivo es entonces ofrecer una plataforma de gesti\'on, desde la cual se pueda controlar un n\'umero potencialmente alto de m\'aquinas. No se pone límite tampoco en cuanto a diversidad de arquitecturas se refiere. La idea es facilitar el proceso de minería con cualquier dispositivo habilitado para tal fin.
+
+
+
+Se pretende tambi\'en hacer lo m\'as transparente al usuario el funcionamiento del software existente, centr\'andose en el rendimiento que pueda obtenerse, bas\'andose principalmente en estad\'isticas, adem\'as de otros factores como la cotizaci\'on actual de las diversas cripto-monedas.
+
+ENROLLARSE UN POCO MAS...
+
+\section{Situaci\'on actual de la FdI-UCM}
+
+El principal aliciente de este planteamiento viene de observar el porcentaje de utilizaci\'on de los recursos inform\'aticos actuales de la facultad. A lo largo de cada curso acad\'emico podemos observar periodos de mayor/menor actividad en las aulas de laboratorios, por ejemplo. Igual situaci\'on nos encontramos en los ordenadores de la biblioteca.
+
+Por otra parte, existen equipos de utilizaci\'on menos frecuente, como por ejemplo los asignados al personal administrativo, cuya jornada es mas reducida. Estos podr\'ian ser aprovechados en multitud de situaciones, una de ellas es la que nosotros planteamos.
+
+Esta idea es extensible a centros inform\'aticos de otras facultades/centros, teniendo as\'i un margen de trabajo mucho mas amplio.
+
+\subsection{Hardware existente - rentabilizaci\'on}
+
+\subsubsection{Consumo energ\'etico}
+
+Es de notar la constante subida en el coste de la energía, especialmente en los últimos años. Los centros de proceso de datos más recientes se caracterizan por la búsqueda de la mayor eficiencia energética posible para así reducir al máximo los costes de explotación. Ante la actual situación de crisis económica, la Universidad Complutense no puede quedarse atrás en la mejora de la eficiencia energética: el ahorro energético permite reducir el efecto que las sucesivas reducciones del presupuesto tienen sobre otras partidas (como las dedicadas a becas y a investigación). Por ello, es fundamental racionalizar el consumo energético de las aulas de informática.
+
+La primera fuente de consumo es el sistema de climatización y alumbrado de las aulas de informática infrautilizadas, cuyo uso resulta imprescindible con independencia del número de alumnos que estén trabajando en el aula. La segunda fuente de consumo es el propio equipamiento informático asignado a las aulas in-frautilizadas: los PCs, servidores y también el equipamiento de red. Si se aprovechase al máximo el potencial de estos equipos en desuso, se podría llegar a conseguir mucha mayor eficiencia a nivel energético.
+
+\subsubsection{otros\ldots??}
+
+\section{Posibles ampliaciones}
+
+
+%-------------------------------------------------------------------
+%\section*{\NotasBibliograficas}
+%-------------------------------------------------------------------
+%\TocNotasBibliograficas
+
+%\medskip
+
+
+%-------------------------------------------------------------------
+%\section*{\ProximoCapitulo}
+%-------------------------------------------------------------------
+%\TocProximoCapitulo
+
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilaci\'on y funcionen mejor algunas teclas r\'apidas de AucTeX
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Tesis.tex"
+%%% End:

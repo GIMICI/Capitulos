@@ -1,0 +1,160 @@
+%---------------------------------------------------------------------
+%
+%                          Capítulo 2
+%
+%---------------------------------------------------------------------
+\chapter{Cloud Computing}
+
+%\begin{FraseCelebre}
+%\begin{Frase}
+%...
+%\end{Frase}
+%\begin{Fuente}
+%...
+%\end{Fuente}
+%\end{FraseCelebre}
+
+%\begin{resumen}
+%...
+%\end{resumen}
+
+%-------------------------------------------------------------------
+%\section{Introducción}
+%-------------------------------------------------------------------
+
+\includegraphics[width=0.9\textwidth]{Imagenes/CloudComputing/CloudComputingDefNIST.png}
+
+ [NIST + www.aspectosprofesionales.info]
+
+
+\section{Introducci\'on}
+
+\textit{Cloud Computing} es un modelo de computaci\'on relativamente reciente, en el cual se independizan los diferentes recursos que intervienen a la hora de utilizar una aplicaci\'on o sistema dado. EL usuario no necesita conocer en detalle sobre que recursos ``reales'' se est\'a trabajando, interes\'andole \'unicamente los recursos virtuales.
+
+Estos recursos son potencialmente de naturaleza distinta: capacidad de c\'omputo, espacio de almacenamiento, tr\'afico de red, etc. El objetivo es generalmente combinarlos para conformar una aplicaci\'on completa.
+
+En este cap\'itulo abordaremos los conceptos principales relacionados con ``Cloud Computing'', as\'i como los diferentes modelos que hay.
+ 
+
+\section{Caracter\'isticas}
+
+Las caracter\'isticas generales que cumple una plataforma de este tipo son:
+
+\begin{itemize}
+
+\item[$-$] \textit{Sevicio bajo demanda: }Un consumidor puede hacer uso de recursos computacionales, tales como tiempo de servidor y almacenamiento en red, sin requerir interacci\'on con cada proveedor de servicios.
+
+\item[$-$] \textit{Acceso uniforme a la red: }Los servicios est\'an disponibles en red y son accedidos usando mecanismos est\'andar que promueven el uso de plataformas heterog\'eneas (m\'oviles, tablets, ordenadores port\'atiles y de escritorio, etc).
+
+\item[$-$] \textit{``Pooling'' de recursos: }Los recursos computacionales del proveedor de servicios son provistos para atender m\'ultiples consumidores usando un modelo multi-usuario, con diferentes recursos f\'isicos y virtuales asignados din\'amicamente, y reasignados bas\'andose en la demanda del consumidor. Hay un sentido de independencia de ubicaci\'on en la que el el cliente generalmente no tiene ni conocimiento ni control sobre la ubicaci\'on exacta de los recursos provistos pero puede especificar su ubicaci\'on a un nivel m\'as alto de abstracci\'on (pa\'is, ciudad, centro de datos).
+
+\item[$-$] \textit{Elasticidad r\'apida: }Los servicios pueden ser provisionados y liberados de manera el\'astica, en algunos casos de manera automm\'atica, escalando de acuerdo con la demanda. Para el consumidor, los servicios disponibles usualmente aparentan ser ilimitados y pueden ser utilizados en cualquier medida y en cualquier momento.
+
+\item[$-$] \textit{Servicio a medida: }Los sistemas Cloud permiten el control y optimizaci\'on de los recursos mediante unidades de medida con cierto nivel de abstracci\'on relativo al tipo de servicio. Los recursos se pueden monitorizar, controlar, y reportar, proveyendo transparencia tanto para el proveedor como para el consumidor del servicio utilizado.
+
+\end{itemize}
+
+\section{\textit{Cloud} privado, \textit{Cloud} p\'ublico, otros}
+
+\includegraphics[width=0.9\textwidth]{Imagenes/CloudComputing/cloud_computing_types.png}
+
+En funci\'on de la ubicaci\'on de los servidores y del p\'ublico al que est\'an destinados los servicios, podemos distinguir principalmente entre tres tipos de cloud: cloud p\'ublico, cloud privado y cloud h\'ibrido.
+
+
+\subsection{\textit{Cloud} privado}
+
+Cualquier centro de c\'omputo en propiedad de una organizaci\'on privada puede considerarse como de este tipo, dado que es destinado a uso exclusivo de la misma. Las principales ventajas que ofrecen los clouds privados son el aislamiento y la exclusividad de su propia infraestructura, as\'i como m\'aximas garant\'ias de seguridad y privacidad en sus sistemas de procesamiento de informaci\'on [2, 7, 8, 9].
+
+Los proveedores de este tipo de servicio suelen tener por clientes a grandes empresas, las cuales a su vez requieren una mayor atenci\'on en aspectos como seguridad e integridad de datos. Por esto, pueden resultar un poco mas costosos.
+
+El uso de clouds privados resulta muy adecuado cuando:
+\begin{itemize}
+\item[$-$] El negocio se basa en su informaci\'on y sus aplicaciones. Por lo tanto, el control y la seguridad son primordiales.
+\item[$-$] La organizaci\'on es lo suficientemente grande como para poder mantener un sistema en la nube propio y eficiente.
+\item[$-$] El negocio est\'a relacionado con la gesti\'on de la informaci\'on de otras empresas. [6]
+\end{itemize}
+
+\subsection{\textit{Cloud} p\'ublico}
+
+En el lado opuesto tenemos el modelo privado, que es a su vez el mas utilizado, y tambi\'en el que mejor representa el concepto de \textit{Cloud Computing}. En general, son de coste reducido, o bien de pago bajo demanda.
+
+Las principales ventajas que se pueden tener al usar este tipo de servicios son la flexibilidad y el ahorro principalmente en infraestructura. Adem\'as, se evitan las inversiones iniciales, muy importantes en los casos de negocios peque\~nos o medianos.
+
+Algunos clouds p\'ublicos son el \textit{Elastic Compute Cloud} de Amazon y \textit{Windows Azure} de Microsoft[2,
+7].
+
+\subsection{\textit{Cloud} h\'ibrido}
+
+En este \'ultimo tipo se mezclan las caracter\'isticas de los modelos vistos anteriormente. El cliente gestiona y hace uso exclusivo de su infraestructura, y a su vez dispone de acceso al \textit{cloud} p\'ublico de alg\'un proveedor.
+
+El uso de un cloud de este tipo resulta muy adecuado cuando una organizaci\'on:
+\begin{itemize}
+\item[$-$] Utiliza una infraestructura privada para realizar sus actividades y hace uso de servicios p\'ublicos a la hora de almacenar la informaci\'on.
+\item[$-$] Utiliza un modelo de SaaS y necesita una infraestructura privada para almacenar informaci\'on con requisitos de seguridad elevados[6].
+\end{itemize}
+
+\section{Modelos de servicio}
+
+\includegraphics[width=0.9\textwidth]{Imagenes/CloudComputing/modelos_servicio2.png}
+
+Existen tres modelos de servicios relativos a \textit{Cloud Computing}, diferenciados por la forma en que los consumidores de servicio los utilizan. Es de notar que un sistema no tiene  necesariamente pertenecer a un \'unico de estos modelos (no son excluyentes).
+
+\subsection{Software como servicio (SaaS)}
+
+Este es quiz\'a el tipo de modelo m\'as cl\'asico de los basados en cloud. Desde servicios sencillos como correo electr\'onico hasta modelos de gesti\'on empresarial completos, podemos encontrar m\'ultiples ejemplos de proveedores de este tipo casi desde los inicios de la computaci\'on.
+
+Hacer uso de este tipo de servicios ofrece numerosas ventajas: el precio del software es pagado en un r\'egimen de uso (bajo demanda), y no incluye inversi\'on inicial, haci\'endolo espcialmente atractivo para peque\~nas y medianas empresas en fase de crecimiento. Tradicionalmente, las compa\~nias de mayor tama\~no tienden a requerir software a medida, teniendo en cuenta otros factores como la eficiencia y seguridad.
+
+Algunos ejemplos de software como servicio son \textit{Google Apps, innkeypos, Quickbooks Online, Successfactors Bizx, Limelight Video Platform, Salesforce.com y Microsoft Office 365}.
+
+\subsection{Infraestructura como servicio (IaaS)}
+
+Este modelo se traduce en ofrecer equipamiento computacional (servidores web, tecnolog\'ias de red, centros de datos) entendido como un servicio. En lugar de adquirir estos recursos, los usuarios los alquilan, a menudo bajo demanda.
+
+El servicio puede incluir escalado din\'amico, de manera que si la aplicaci\'on requiriese en cualquier momento disponer de mas recursos, los pudiese obtener de manera pr\'acticamente inmediata.
+
+Actualmente, el proveedor m\'as importante de este tipo de servicios es Amazon EC2. [INSERTAR REF. A amazon]. EC2 ofrece escalabilidad controlada por el usuario, pagando por los recursos a nivel de horas de uso. Otros servicios a destacar: \textit{Rackspace Cloud, Terremark, Windows Azure Virtual Machines y Google Compute Engine}.[3 - CygnusCloud]
+
+Los usuarios mas naturales de este tipo de servicio son las compa\~nias y personas f\'isicas enfocadas en la investigaci\'on. A menudo, los estudios cient\'ificos y m\'edicos requieren de mucha capacidad de computo durante las fases de an\'alisis y test, los cuales ser\'ian imposibles sin poder disponer de recursos adicionales en situaciones puntuales.
+
+\subsection{Plataforma como servicio (PaaS)}
+
+En este modelo se ofrece una plataforma en su totalidad, que incluye sistema operativo, un conjunto de aplicaciones, un gestor de BBDD y un conjunto de servicios web. As\'i, contiene todo lo que un desarrollador necesita para construir una aplicaci\'on.
+
+Asimismo, puede ser visto como la evoluci\'on del web hosting, dado que una mayor\'ia de proveedores de este tipo de servicio ya ofrecen una variedad de facilidades que conforman un conjunto bastante completo a la hora de desarrollar sitios web.
+
+El beneficio principal de este modelo es disponer de software y de la capacidad de despliegue, basado en su totalidad en la nube, sin tener que preocuparse por adquirir o mantener la infraestructura. \textit{PaaS} habitualmente nace de la necesidad de escalabilidad, y en referencia a esto se acu\~na el t\'ermino ``escalado din\'amico'', que significa que el software puede crecer o decrecer con facilidad.
+
+Algunos servicios de este tipo son \textit{Amazon Elastic Beanstalk, Cloud Foundry, Heroku, Force.com, EngineYard, Mendix, Google App Engine, Windows Azure Compute y OrangeScape}.
+
+\subsection{Otros modelos}
+
+Existen tambi\'en otros modelos menos ``difundidos'' que surgen como soluci\'on a situaciones muy concretas. Se pueden entender tambi\'en como una mezcla de dos de los modelos principales:
+
+\begin{itemize}
+\item[$-$] Escritorio como Servicio (DaaS): Es conocido tambi\'en como escritorio virtual, y ofrece al cliente un escritorio con todas las aplicaciones instaladas y listas para su ejecci\'on. Cuando el usuario inicia sesi\'on utiliza su configuraci\'on personal y toda la informaci\'on que hubiese podido guardar en sesiones anteriores.
+
+\item[$-$] Entorno de pruebas como Servicio (TEaaS): Como su nombre lo indica, ofrece al usuario un entorno donde probar aplicaciones/software.
+\end{itemize}
+
+
+%-------------------------------------------------------------------
+%\section*{\NotasBibliograficas}
+%-------------------------------------------------------------------
+%\TocNotasBibliograficas
+
+%\medskip
+
+
+%-------------------------------------------------------------------
+%\section*{\ProximoCapitulo}
+%-------------------------------------------------------------------
+%\TocProximoCapitulo
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Tesis.tex"
+%%% End:

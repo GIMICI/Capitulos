@@ -1,0 +1,83 @@
+%---------------------------------------------------------------------
+%
+%                          Capítulo 2
+%
+%---------------------------------------------------------------------
+\chapter{Cloud Computing}
+
+%\begin{FraseCelebre}
+%\begin{Frase}
+%...
+%\end{Frase}
+%\begin{Fuente}
+%...
+%\end{Fuente}
+%\end{FraseCelebre}
+
+%\begin{resumen}
+%...
+%\end{resumen}
+
+%-------------------------------------------------------------------
+%\section{Introducción}
+%-------------------------------------------------------------------
+\section{Introducci\'on}
+
+\textit{Cloud Computing} es un modelo de computaci\'on relativamente reciente, el cual se ``desprende'' del hardware que se utiliza para prestar los servicios. EL usuario no necesita conocer sobre que recursos f\'isicos se est\'a trabajando, interes\'andole \'unicamente los recursos virtuales.
+
+Los recursos antes mencionados son potencialmente de naturaleza distinta: capacidad de c\'omputo, espacio de almacenamiento, tr\'afico de red, etc.
+
+En este cap\'itulo abordaremos los conceptos principales relacionados con ``Cloud Computing'', as\'i como los diferentes tipos que hay.
+
+La definici\'on oficial marcada por el NIST (Instituto Nacional de Estándares y Tecnolog\'ias - EEUU) es:
+
+El modelo de \textit{Cloud Computing} es aquel que permite un acceso red f\'acil, conveniente e independiente de ubicaci\'on, a un pool configurable de recursos computacionales (p.ej. redes, servidores, almacenamiento, aplicaciones, servicios) y que puede ser accedido de forma r\'apida y con un m\'inimo de manejo \'o interacci\'on del proveedor de servicios. [INTRODUCIR REFERENCIA A NIST]
+
+\section{Caracter\'isticas}
+
+Las caracter\'isticas generales que suele cumplir una plataforma de este tipo son:
+
+\begin{itemize}
+
+\item[$-$] \textit{Sevicio bajo demanda: }Un consumidor puede hacer uso de recursos computacionales, tales como tiempo de servidor y almacenamiento en red, sin requerir interacci\'on con cada proveedore de servicios.
+
+\item[$-$] \textit{Acceso uniforme a la red: }Los servicios est\'an disponibles en red y son accedidos usando mecanismos est\'andar que promueven el uso de plataformas heterog\'eneas (m\'oviles, tablets, ordenadores port\'atiles y de escritorio, etc).
+
+\item[$-$] \textit{``Pooling'' de recursos: }Los recursos computacionales del proveedor de servicios son provistos para atender m\'ultiples consumidores usando un modelo multi-usuario, con diferentes recursos f\'isicos y virtuales asignados din\'amicamente, y reasignados bas\'andose en la demanda del consumidor. Hay un sentido de independencia de ubicaci\'on en la que el el cliente generalmente no tiene ni conocimiento ni control sobre la ubicaci\'on exacta de los recursos provistos pero puede especificar su ubicaci\'on a un nivel m\'as alto de abstracci\'on (pa\'is, ciudad, centro de datos). 
+
+\item[$-$] \textit{Elasticidad r\'apida: }Los servicios pueden ser provisionados y liberados de manera el\'astica, en algunos casos de manera automm\'atica, escalando de acuerdo con la demanda. Para el consumidor, los servicios disponibles usualmente aparentan ser ilimitados y pueden ser utilizados en cualquier medida y en cualquier momento.
+    
+\item[$-$] \textit{Servicio a medida: }Los sistemas Cloud permiten el control y optimizaci\'on de los recursos mediante unidades de medida con cierto nivel de abstracci\'on relativo al tipo de servicio. Los recursos se pueden monitorizar, controlar, y reportar, proveyendo transparencia tanto para el proveedor como para el consumidor del servicio utilizado.
+
+\end{itemize}
+
+\section{Modelos de servicio}
+
+Existen tres modelos de servicios relativos a \textit{Cloud Computing}, diferenciados por la forma en que los consumidores de servicio los utilizan. Es de notar que un sistema no tiene  necesariamente pertenecer a un \'unico de estos modelos (no son excluyentes).
+
+\subsection{Plataforma como servicio (PaaS)}
+
+En este modelo se ofrece una plataforma en su totalidad, que incluye sistema operativo, un conjunto de aplicaciones, un gestor de BBDD y un conjunto de servicios web. As\'i, contiene todo lo que un desarrollador necesita para construir una aplicaci\'on.
+
+
+
+%-------------------------------------------------------------------
+%\section*{\NotasBibliograficas}
+%-------------------------------------------------------------------
+%\TocNotasBibliograficas
+
+%\medskip
+
+
+%-------------------------------------------------------------------
+%\section*{\ProximoCapitulo}
+%-------------------------------------------------------------------
+%\TocProximoCapitulo
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Tesis.tex"
+%%% End:

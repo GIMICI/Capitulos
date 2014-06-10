@@ -1,0 +1,61 @@
+%---------------------------------------------------------------------
+%
+%                          Cap\'itulo 4
+%
+%---------------------------------------------------------------------
+
+\chapter{Interfaz del sistema}
+
+\label{cap4:sec:manual}
+
+\section{P\'agina de inicio (index) }
+
+\fboxsep 0.05cm
+\fbox{
+	\includegraphics[width=0.9\textwidth]{Imagenes/Manual/Index.png}
+}
+
+\section{Formulario de registro}
+
+\fboxsep 0.05cm
+\fbox{
+	\includegraphics[width=0.9\textwidth]{Imagenes/Manual/Registro.png}
+}
+
+\section{Formulario login}
+\fboxsep 0.05cm
+\fbox{
+	\includegraphics[width=0.9\textwidth]{Imagenes/Manual/LogIn.png}
+}
+
+\section{Formulario principal del usuario}
+\fboxsep 0.05cm
+\fbox{
+	\includegraphics[width=0.9\textwidth]{Imagenes/Manual/Home.png}
+}
+
+\section{Men\'u manager}
+\fboxsep 0.05cm
+\fbox{
+	\includegraphics[width=0.9\textwidth]{Imagenes/Manual/Menu_Manager.png}
+}
+
+\section{Men\'u panel de control}
+\subsection{Informaci\'on de las machines}
+\fboxsep 0.05cm
+\fbox{
+	\includegraphics[width=0.9\textwidth]{Imagenes/Manual/Menu_PC_Machines.png}
+}
+
+\subsection{Informaci\'on de los workers}
+\fboxsep 0.05cm
+\fbox{
+	\includegraphics[width=0.9\textwidth]{Imagenes/Manual/Menu_PC_Workers.png}
+}
+
+\section{Estad\'isticas de los workers}
+\fboxsep 0.05cm
+\fbox{
+	\includegraphics[width=0.9\textwidth]{Imagenes/Manual/Worker_stats.png}
+}
+

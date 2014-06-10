@@ -1,0 +1,140 @@
+%---------------------------------------------------------------------
+%
+%                          Capítulo 3
+%
+%---------------------------------------------------------------------
+\chapter{Tecnolog\'ias}
+
+%\begin{FraseCelebre}
+%\begin{Frase}
+%...
+%\end{Frase}
+%\begin{Fuente}
+%...
+%\end{Fuente}
+%\end{FraseCelebre}
+
+%\begin{resumen}
+%...
+%\end{resumen}
+
+%-------------------------------------------------------------------
+%\section{Introducción}
+%-------------------------------------------------------------------
+\section{Tecnolog\'ias y librer\'ias utilizadas}
+\subsection{Python}
+\subsubsection{?`Qu\'e es Python?}
+Python es un lenguaje de programaci\'on creado por Guido van Rossum a finales de 1980 cuyo nombre fue inspirado en el grupo de c\'omicos inlgeses \''Monty Python\''. Es un lenguaje de programaci\'on cuya filosof\'ia hace hincapi\'e en una sintaxis muy limpia y legible.\\
+
+Se trata de un lenguaje interpretado, con tipado din\'amico, fuertemente tipado, orientado a objetos y multiplataforma
+
+\subsubsection{?`Por qu\'e Python?}
+Python es un lenguaje de programaci\'on que todo estudiante de ingenier\'ia deber\'ia conocer. Por las sus caracter\'istcas mencionadas anteriormente, es decir, por sintaxis simple, clara y sencilla; el tipado din\'amico, el gestor de memoria, la gran cantidad de librerías que dispone y la gran potencia del lenguaje hacen que desarrollar una aplicaci\'on en Python sea rápido, sencillo, con un c\'odigo limpio y legible.\\
+
+Por todas estas caracter\'isticas, Python tiene un gran capacidad de integraci\'on en nuestro sistema CloudMiner respecto a otros lenguajes.
+
+Algunos casos de \'exito en el uso de Python son Google, MSN, Yahoo, Wikipedia, Youtube, La NASA y todas las distribuciones de Linux.
+\subsection{Web2py}
+\subsubsection{?`Qu\'e es Web2py?}
+Web2py es un framework de desarrollo web de c\'odigo abierto de muy f\'acil aprendizaje, incluye las últimas tecnolog\'ias de una forma simple y clara, tales como MVC, ORM, plantillas, java script, ajax, CSS, etc, lo que convierte en una soluci\'on completamente funcional para crear aplicaciones web de manera totalmente interactiva.
+
+Su objetivo principal es dar soporte al desarrollo \'agil de software de apliaciones web escalables, seguras y portable, Web2py est\'a escrito en lenguaje Python.
+\subsubsection{?`Por qu\'e Web2Py?}
+Elegimos Web2py por una diversidad de factores, entre ellas podemos destacar.
+
+Tiene una curva de aprendizaje muy llama respecto a otros frameworks y provee un entorno de desarrollo completamente basado en web.
+
+Web2py tiene un foco en la seguridad prestando mecanismos predeterminados seguros, previniendo la las vulnerabilidades más comunes.
+
+
+
+%-------------------------------------------------------------------
+%\section*{\NotasBibliograficas}
+%-------------------------------------------------------------------
+%\TocNotasBibliograficas
+
+%\medskip
+
+
+%-------------------------------------------------------------------
+%\section*{\ProximoCapitulo}
+%-------------------------------------------------------------------
+%\TocProximoCapitulo
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Tesis.tex"
+%%% End:
+%---------------------------------------------------------------------
+%
+%                          Capítulo 2
+%
+%---------------------------------------------------------------------
+\chapter{Tecnolog\'ias}
+
+%\begin{FraseCelebre}
+%\begin{Frase}
+%...
+%\end{Frase}
+%\begin{Fuente}
+%...
+%\end{Fuente}
+%\end{FraseCelebre}
+
+%\begin{resumen}
+%...
+%\end{resumen}
+
+%-------------------------------------------------------------------
+%\section{Introducción}
+%-------------------------------------------------------------------
+\section{Tecnolog\'ias y librer\'ias utilizadas}
+\subsection{Python}
+\subsubsection{?`Qu\'e es Python?}
+Python es un lenguaje de programaci\'on creado por Guido van Rossum a finales de 1980 cuyo nombre fue inspirado en el grupo de c\'omicos inlgeses \''Monty Python\''. Es un lenguaje de programaci\'on cuya filosof\'ia hace hincapi\'e en una sintaxis muy linpia y legible.\\
+
+Se trata de un lenguaje interpretado, con tipado din\'amico, fuertemente tipado, orientado a objetos y multiplataforma
+
+\subsubsection{?`Por qu\'e Python?}
+Python es un lenguaje de programaci\'on que todo estudiante de ingenier\'ia deber\'ia conocer. Por las sus caracter\'istcas mencionadas anteriormente, es decir, por sintaxis simple, clara y sencilla; el tipado din\'amico, el gestor de memoria, la gran cantidad de librerías que dispone y la gran potencia del lenguaje hacen que desarrollar una aplicaci\'on en Python sea rápido, sencillo, con un c\'odigo limpio y legible.\\
+
+Por todas estas caracter\'isticas, Python tiene un gran capacidad de integraci\'on en nuestro sistema CloudMiner respecto a otros lenguajes.
+
+Algunos casos de \'exito en el uso de Python son Google, MSN, Yahoo, Wikipedia, Youtube, La NASA y todas las distribuciones de Linux.
+\subsection{Web2py}
+\subsubsection{?`Qu\'e es Web2py?}
+Web2py es un framework de desarrollo web de c\'odigo abierto de muy f\'acil aprendizaje, incluye las últimas tecnolog\'ias de una forma simple y clara, tales como MVC, ORM, plantillas, java script, ajax, CSS, etc, lo que convierte en una soluci\'on completamente funcional para crear aplicaciones web de manera totalmente interactiva.
+
+Su objetivo principal es dar soporte al desarrollo \'agil de software de apliaciones web escalables, seguras y portable, Web2py est\'a escrito en lenguaje Python.
+\subsubsection{?`Por qu\'e Web2Py?}
+Elegimos Web2py por una diversidad de factores, entre ellas podemos destacar.
+
+Tiene una curva de aprendizaje muy llama respecto a otros frameworks y provee un entorno de desarrollo completamente basado en web.
+
+Web2py tiene un foco en la seguridad prestando mecanismos predeterminados seguros, previniendo la las vulnerabilidades más comunes.
+
+
+
+%-------------------------------------------------------------------
+%\section*{\NotasBibliograficas}
+%-------------------------------------------------------------------
+%\TocNotasBibliograficas
+
+%\medskip
+
+
+%-------------------------------------------------------------------
+%\section*{\ProximoCapitulo}
+%-------------------------------------------------------------------
+%\TocProximoCapitulo
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Tesis.tex"
+%%% End:
